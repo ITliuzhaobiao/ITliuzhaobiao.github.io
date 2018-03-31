@@ -15,7 +15,7 @@
   
     
   
-      <title>Hello World - 耳语心声</title>
+      <title>你好世界 - 耳语心声</title>
   
   
   <meta name="description" content="个人博客">
@@ -105,7 +105,7 @@
 				
 					<div class="nav-name">
 				
-					<a class='nav-link' href="/wenji/">
+					<a class='nav-link' href="/categories/wenji/">
 						<span>文记 </span>
 					</a>
 				</div>
@@ -120,8 +120,8 @@
 				
 					<div class="nav-name">
 				
-					<a class='nav-link' href="/zonglu/">
-						<span>总录 </span>
+					<a class='nav-link' href="/categories/jishi/">
+						<span>技事 </span>
 					</a>
 				</div>
 			</div>
@@ -135,7 +135,7 @@
 				
 					<div class="nav-name">
 				
-					<a class='nav-link' href="/suibi/">
+					<a class='nav-link' href="/categories/随笔/">
 						<span>随笔 </span>
 					</a>
 				</div>
@@ -164,7 +164,7 @@
 			</a>
 		</div>
 	</div>
-	<div class='nav-item' id='nav-item-search'>
+	<!-- 注释搜索图标<div class='nav-item' id='nav-item-search'>
 		
 		<div class='nav-icon'>
 		
@@ -172,7 +172,7 @@
 			<img src="/images/icons/colorful-outlined/search.svg" alt="">
 			</a>
 		</div>
-	</div>
+	</div> -->
 	<div class="nav-item" id='nav-item-more'>
 		<div class="nav-icon">
 				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
@@ -183,10 +183,12 @@
 		
 			
 			
+				
+			
 		
 			<div class='nav-more-item'>
 					<div class="nav-name">
-						<a class='nav-link' href="/wenji/">
+						<a class='nav-link' href="/categories/wenji/">
 							<span>文记</span>
 						</a>
 					</div>
@@ -195,11 +197,13 @@
 		
 			
 			
+				
+			
 		
 			<div class='nav-more-item'>
 					<div class="nav-name">
-						<a class='nav-link' href="/zonglu/">
-							<span>总录</span>
+						<a class='nav-link' href="/categories/jishi/">
+							<span>技事</span>
 						</a>
 					</div>
 			</div>
@@ -207,18 +211,21 @@
 		
 			
 			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="/suibi/">
-							<span>随笔</span>
-						</a>
-					</div>
-			</div>
+				
+					
+				
+			
 		
 		
 		
-	</div>
+		<div class='nav-more-item'>
+				<div class="nav-name">
+					<a class='nav-link' href="/categories/随笔/">
+						<span>随笔</span>
+					</a>
+				</div>
+		</div>
+		 
 	</div>
 </nav>
 
@@ -243,6 +250,10 @@
 
 
     
+        
+            
+            
+        
     
 
 
@@ -270,17 +281,26 @@
 
 
 
-<article class="article" id="/2018/03/28/hello-world/" data-name='Hello World' data-version="">
+<article class="article" id="/2018/03/28/hello-world/" data-name='你好世界' data-version="">
 
     <!-- Title -->
     <div class='article-header'>
          
          <h1 class='article-title'>
             <a href="/2018/03/28/hello-world/">
-                Hello World
+                你好世界
             </a>
         </h1>
         <!-- TODO: support nested categories,display them nicely -->
+        
+        <ul class='article-categories'>
+            
+            
+                <li><a href="/categories/随笔/" data-no-instant>
+                    <img src="/images/随笔.svg" alt="随笔" onerror='if(this.src != "/images/uncategorized.svg") this.src="/images/uncategorized.svg"' title='随笔'/>
+                </a></li>
+            
+        </ul>
         
     </div>
     
@@ -289,8 +309,8 @@
     <ul>
             <li><i class='fa fa-calendar'></i> 2018-03-28</li>
             
-            <li><i class='fa fa-comments'></i> <a href='#article-comment'><span id='article-comment-count'>0</span></a></li>
-            <li><i class="fa fa-eye"></i> <span id='article-visit-count'>0</span></li>
+            <!-- <li><i class='fa fa-comments'></i> <a href='#article-comment'><span id='article-comment-count'>0</span></a></li> -->
+            <!-- <li><i class="fa fa-eye"></i> <span id='article-visit-count'>0</span></li> -->
             
             <li><i class="fa fa-user"></i> Mr.LiuZB</li>
             
@@ -305,6 +325,18 @@
             </li>
     </ul>
     
+<div class="tags">
+	
+		
+			<label class='tag-1'><a href="/tags/hello-world/">Hello world</a></label>
+		
+	
+		
+			<label class='tag-2'><a href="/tags/第一篇/">第一篇</a></label>
+		
+	
+	</div>
+
     </div>
     <div class='article-cards'>
         <!-- Author Card -->
@@ -407,19 +439,6 @@ Run server
     </div>
     
     
-    
-        <div class="article-comment" id='article-comment'>
-            
-
-<h1>评论</h1>
-
-  
-  
-    <div id='valine'></div>
-  
-
-
-        </div>
         
 </article>
   </div>
@@ -432,8 +451,8 @@ Run server
 <footer id='footer'>
     <div class='footer-copyright'>
         <div>
-            <p> 版权所有 <a href="">Mr.LiuZB </a> @ 2018</p>
-            <p>设计: <i class="fas fa-paint-brush"></i> <a href="https://moober.cn">Moober</a> 和 <i class="fas fa-graduation-cap"></i> <a href="https://qutang.github.io">Qu Tang</a> &bull; 主题: <a href="">Cutie 2.0.7-beta-Taurus</a> &bull; 由 <a href="http://hexo.io">Hexo.</a> 强力支持</p>
+            <p> 版权所有 <a href="">Mr.LiuZB </a> @ 2018 &bull; <a href="mailto:lzb@itlzb.cn">联系博主</a></p>
+            <p>设计: <i class="fas fa-paint-brush"></i> <a href="https://moober.cn">Moober</a> 和 <i class="fas fa-graduation-cap"></i> <a>Q T</a> &bull; 主题: <a href="">Cutie 2.0.7-beta-Taurus</a> &bull; 由 <a href="http://hexo.io">Hexo.</a> 强力支持 </p>
         </div>
     </div>
     
@@ -501,7 +520,7 @@ Run server
 			</a>
 		</div>
 	</div>
-	<div class='nav-item' id='nav-item-search'>
+	<!-- 注释搜索图标<div class='nav-item' id='nav-item-search'>
 		
 		<div class='nav-icon'>
 		
@@ -509,7 +528,7 @@ Run server
 			<img src="/images/icons/colorful-outlined/search.svg" alt="">
 			</a>
 		</div>
-	</div>
+	</div> -->
 	<div class="nav-item" id='nav-item-more'>
 		<div class="nav-icon">
 				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
@@ -520,10 +539,12 @@ Run server
 		
 			
 			
+				
+			
 		
 			<div class='nav-more-item'>
 					<div class="nav-name">
-						<a class='nav-link' href="/wenji/">
+						<a class='nav-link' href="/categories/wenji/">
 							<span>文记</span>
 						</a>
 					</div>
@@ -532,11 +553,13 @@ Run server
 		
 			
 			
+				
+			
 		
 			<div class='nav-more-item'>
 					<div class="nav-name">
-						<a class='nav-link' href="/zonglu/">
-							<span>总录</span>
+						<a class='nav-link' href="/categories/jishi/">
+							<span>技事</span>
 						</a>
 					</div>
 			</div>
@@ -544,18 +567,21 @@ Run server
 		
 			
 			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="/suibi/">
-							<span>随笔</span>
-						</a>
-					</div>
-			</div>
+				
+					
+				
+			
 		
 		
 		
-	</div>
+		<div class='nav-more-item'>
+				<div class="nav-name">
+					<a class='nav-link' href="/categories/随笔/">
+						<span>随笔</span>
+					</a>
+				</div>
+		</div>
+		 
 	</div>
 </nav>
 

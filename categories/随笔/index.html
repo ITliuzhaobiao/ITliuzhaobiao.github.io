@@ -13,6 +13,8 @@
   
   
   
+      <title>随笔 - Category - 耳语心声</title>
+  
     
   
   
@@ -103,7 +105,7 @@
 				
 					<div class="nav-name">
 				
-					<a class='nav-link' href="/wenji/">
+					<a class='nav-link' href="/categories/wenji/">
 						<span>文记 </span>
 					</a>
 				</div>
@@ -118,8 +120,8 @@
 				
 					<div class="nav-name">
 				
-					<a class='nav-link' href="/zonglu/">
-						<span>总录 </span>
+					<a class='nav-link' href="/categories/jishi/">
+						<span>技事 </span>
 					</a>
 				</div>
 			</div>
@@ -131,9 +133,9 @@
 		
 			<div class='nav-item'>
 				
-					<div class="nav-name">
+					<div class="nav-name active_page">
 				
-					<a class='nav-link' href="/suibi/">
+					<a class='nav-link' href="/categories/随笔/">
 						<span>随笔 </span>
 					</a>
 				</div>
@@ -150,15 +152,15 @@
 			</a>
 		</div>
 	</div>
-	<div class='nav-item' id='nav-item-search'>
+	<!-- 注释搜索图标<div class='nav-item' id='nav-item-search'>
 		
-		<div class='nav-icon active_dot'>
+		<div class='nav-icon'>
 		
 			<a href="/search/" title='搜索'>
 			<img src="/images/icons/colorful-outlined/search.svg" alt="">
 			</a>
 		</div>
-	</div>
+	</div> -->
 	<div class="nav-item" id='nav-item-more'>
 		<div class="nav-icon">
 				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
@@ -169,10 +171,12 @@
 		
 			
 			
+				
+			
 		
 			<div class='nav-more-item'>
 					<div class="nav-name">
-						<a class='nav-link' href="/wenji/">
+						<a class='nav-link' href="/categories/wenji/">
 							<span>文记</span>
 						</a>
 					</div>
@@ -181,11 +185,13 @@
 		
 			
 			
+				
+			
 		
 			<div class='nav-more-item'>
 					<div class="nav-name">
-						<a class='nav-link' href="/zonglu/">
-							<span>总录</span>
+						<a class='nav-link' href="/categories/jishi/">
+							<span>技事</span>
 						</a>
 					</div>
 			</div>
@@ -193,18 +199,21 @@
 		
 			
 			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="/suibi/">
-							<span>随笔</span>
-						</a>
-					</div>
-			</div>
+				
+					
+				
+			
 		
 		
 		
-	</div>
+		<div class='nav-more-item'>
+				<div class="nav-name">
+					<a class='nav-link' href="/categories/随笔/">
+						<span>随笔</span>
+					</a>
+				</div>
+		</div>
+		 
 	</div>
 </nav>
 
@@ -214,19 +223,83 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div style="flex: 1;">
-      <div class='search-container'>
-	<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search"><input type="search" name="q" class="search-input" placeholder="Search"><button type="submit" class="search-submit">Search</button><input type="hidden" name="sitesearch" value="https://bolg.itlzb.cn"></form>
+      <div class='archive-container'>
 
-	<ul class="cat-list">
-		
-	</ul>
 
-	<div class='tag-cloud'>
-		
+	
+		<div class='archive-header'>
+		<div class='archive-logo'>
+							<img src="/images/随笔.svg" alt="">
+				</div><h2 class='archive-title'>随笔</h2>
 	</div>
 	
+	<div class="archive-cards">
+	
+		
+
+
+
+
+<div class='Card-archive' id='/2018/03/28/hello-world/' data-name='你好世界' data-version=''>
+	<mark class='Card-badge' style='{visibility: "hidden"}'></mark>
+	<div class="Card-body">
+		<h3 class='Card-title'>
+			
+				<a href="/2018/03/28/hello-world/">
+			
+			你好世界</a>
+		</h3>
+		<div class="Card-meta">
+			<div class='Card-tags'>
+<div class="tags">
+	
+		
+			
+				<label class='tag-1'><a href="/tags/hello-world/">Hello world</a></label>
+			
+		
+	
+		
+			
+				<label class='tag-2'><a href="/tags/第一篇/">第一篇</a></label>
+			
+		
+	
+	</div>
+</div>
+			<ul>
+					<li><i class='fa fa-calendar'></i> 2018-03-28</li>
+					<!--注释 
+					
+					<li><i class='fa fa-comments'></i> <span class='card-comment-count'>0</span></li>
+					<li><i class="fa fa-eye"></i> <span class='card-visit-count'>0</span></li>
+					
+					 结束-->
+			</ul>
+		</div>
+	</div>
 </div>
 
+	
+	</div>
+
+
+
+<div class='pagination'>
+	
+	
+	
+		<div class="pagination-item">
+			
+			
+				<span>1</span>
+			
+		</div>
+	
+
+	
+</div>
+</div>
   </div>
 
   
@@ -237,8 +310,8 @@
 <footer id='footer'>
     <div class='footer-copyright'>
         <div>
-            <p> 版权所有 <a href="">Mr.LiuZB </a> @ 2018</p>
-            <p>设计: <i class="fas fa-paint-brush"></i> <a href="https://moober.cn">Moober</a> 和 <i class="fas fa-graduation-cap"></i> <a href="https://qutang.github.io">Qu Tang</a> &bull; 主题: <a href="">Cutie 2.0.7-beta-Taurus</a> &bull; 由 <a href="http://hexo.io">Hexo.</a> 强力支持</p>
+            <p> 版权所有 <a href="">Mr.LiuZB </a> @ 2018 &bull; <a href="mailto:lzb@itlzb.cn">联系博主</a></p>
+            <p>设计: <i class="fas fa-paint-brush"></i> <a href="https://moober.cn">Moober</a> 和 <i class="fas fa-graduation-cap"></i> <a>Q T</a> &bull; 主题: <a href="">Cutie 2.0.7-beta-Taurus</a> &bull; 由 <a href="http://hexo.io">Hexo.</a> 强力支持 </p>
         </div>
     </div>
     
@@ -294,15 +367,15 @@
 			</a>
 		</div>
 	</div>
-	<div class='nav-item' id='nav-item-search'>
+	<!-- 注释搜索图标<div class='nav-item' id='nav-item-search'>
 		
-		<div class='nav-icon active_dot'>
+		<div class='nav-icon'>
 		
 			<a href="/search/" title='搜索'>
 			<img src="/images/icons/colorful-outlined/search.svg" alt="">
 			</a>
 		</div>
-	</div>
+	</div> -->
 	<div class="nav-item" id='nav-item-more'>
 		<div class="nav-icon">
 				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
@@ -313,10 +386,12 @@
 		
 			
 			
+				
+			
 		
 			<div class='nav-more-item'>
 					<div class="nav-name">
-						<a class='nav-link' href="/wenji/">
+						<a class='nav-link' href="/categories/wenji/">
 							<span>文记</span>
 						</a>
 					</div>
@@ -325,11 +400,13 @@
 		
 			
 			
+				
+			
 		
 			<div class='nav-more-item'>
 					<div class="nav-name">
-						<a class='nav-link' href="/zonglu/">
-							<span>总录</span>
+						<a class='nav-link' href="/categories/jishi/">
+							<span>技事</span>
 						</a>
 					</div>
 			</div>
@@ -337,18 +414,21 @@
 		
 			
 			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="/suibi/">
-							<span>随笔</span>
-						</a>
-					</div>
-			</div>
+				
+					
+				
+			
 		
 		
 		
-	</div>
+		<div class='nav-more-item'>
+				<div class="nav-name">
+					<a class='nav-link' href="/categories/随笔/">
+						<span>随笔</span>
+					</a>
+				</div>
+		</div>
+		 
 	</div>
 </nav>
 
@@ -418,6 +498,33 @@
 <script data-no-instant type='text/javascript'>
 changeLayoutOnTouchScreen();
 
+
+var post = new Post('Tdt0ap60YczPm0WyeNczaF0z-gzGzoHsz', 'tj0fnz56gmFIhXLVOfvTvSrX');
+$('.Card-archive').each(function(){
+    var post_url = $(this).attr('id');
+    var true_url = $(this).find('.Card-title a').first().attr('href');
+    var card = this;
+    if(true_url.startsWith('http')){ //external link
+        $(card).find('.Card-title a').first().click(function(e){
+            post.updatePostVersion(post_url); 
+        });
+    }
+
+    post.checkUpdate(post_url, function(post_url, hasUpdate){
+        if(hasUpdate){
+            $(card).find('mark.Card-badge').show();
+        }else{
+            $(card).find('mark.Card-badge').hide();
+        }
+    });
+    post.getCommentCount(post_url, function(count){
+        $(card).find('.card-comment-count').first().text(count);
+    });
+    post.getVisitCount(post_url, function(count){
+        $(card).find('.card-visit-count').first().text(count);
+    });
+    
+});
 
 </script>
 
