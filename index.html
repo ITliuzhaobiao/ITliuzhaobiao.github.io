@@ -310,9 +310,6 @@
 						<li><i class='fa fa-calendar'></i> 2018-03-28</li>
 						<!--注释 
 						
-						<li><i class='fa fa-comments'></i> <span class='card-comment-count'>0</span></li>
-						<li><i class="fa fa-eye"></i> <span class='card-visit-count'>0</span></li>
-						
 						 结束-->
 				</ul>
 			</div>
@@ -477,23 +474,6 @@
 
 
     
-    
-    
-    
-<script>
-    new Valine({
-        el: '#valine',
-        notify:false, 
-        verify:false,
-        appId: 'Tdt0ap60YczPm0WyeNczaF0z-gzGzoHsz',
-        appKey: 'tj0fnz56gmFIhXLVOfvTvSrX',
-        placeholder: '嘻嘻...是不是有想给我说的话？',
-        path:window.location.pathname, 
-        avatar:'retro',
-        lang: 'z'
-    });
-</script>
-
 
 
 
@@ -525,11 +505,6 @@
 
 
 
-<script type="text/javascript">
-  var userip;
-</script>
-<script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
-
 
 <script src="/js/post.js"></script>
 
@@ -537,7 +512,7 @@
 changeLayoutOnTouchScreen();
 
 
-var post = new Post('Tdt0ap60YczPm0WyeNczaF0z-gzGzoHsz', 'tj0fnz56gmFIhXLVOfvTvSrX');
+var post = new Post('', '');
 console.log(post);
 $('.Card').each(function(){
     var post_url = $(this).attr('id');
