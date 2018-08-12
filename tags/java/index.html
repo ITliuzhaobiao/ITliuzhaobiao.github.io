@@ -10,12 +10,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   
-  
-  
-  
-    
       <title>java - Tag - 耳语心声</title>
   
+
   
   
   <meta name="description" content="个人博客">
@@ -25,9 +22,20 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Load scheme css -->
-  <link rel="stylesheet" href="/css/lightgallery.css">
+  <!-- load loadjs.js -->
+  <script src="/libs/loadjs/dist/loadjs.min.js"></script>
+
+
+<link rel="stylesheet" href="/libs/animate.css/animate.min.css">
+  <!-- load lightgallery -->
+<link rel="stylesheet" href="/css/lightgallery.css">
+<link rel="stylesheet" href="/libs/noty/lib/noty.css">
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
   
+
 
 
 
@@ -39,16 +47,20 @@
     
 
 
+ 
+
   <!-- load font awesome 5 -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
   });
   </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <!-- load mathjax -->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax//libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
+  <!-- load js-cookie -->
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="/js/social-share.min.js"></script>
     <script src="/js/theme.js"></script>
@@ -59,19 +71,18 @@
 
   <!-- include comment system code -->
   
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//cdn1.lncld.net/static/js/3.6.4/av-min.js"></script>
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="/images/favicon.png">
-
 </head>
 <body style="display: flex; flex-direction: column; min-height: 100vh;">
 
  
 
-<header id="header">
+<header id="header" class='header'>
 	<div class="header-title">
 		
 		<div class='header-logo'>
@@ -152,7 +163,7 @@
 			</a>
 		</div>
 	</div>
-	<!-- 注释搜索图标<div class='nav-item' id='nav-item-search'>
+	<div class='nav-item' id='nav-item-search'>
 		
 		<div class='nav-icon'>
 		
@@ -160,7 +171,7 @@
 			<img src="/images/icons/colorful-outlined/search.svg" alt="">
 			</a>
 		</div>
-	</div> -->
+	</div>
 	<div class="nav-item" id='nav-item-more'>
 		<div class="nav-icon">
 				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
@@ -168,6 +179,7 @@
 				</a>
 		</div>
 		<div class="nav-more-menu">
+				<i class="far fa-times-circle" id='nav-more-menu-close' onclick='onClickNavMenuClose(event);' ontouchstart='onClickNavMenuClose(event);'></i>
 		
 			
 			
@@ -213,12 +225,18 @@
 					</a>
 				</div>
 		</div>
-		 
+		
+	</div>
 	</div>
 </nav>
 
 	</div>
 </header>
+
+ 
+
+
+
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -236,8 +254,8 @@
 
 
 
-<div class='Card-archive' id='/2018/04/07/JAVA集合基础/' data-name='JAVA集合基础' data-version=''>
-	<mark class='Card-badge' style='{visibility: "hidden"}'></mark>
+<div class='Card-archive' id='hashit_cde8d788ede17f924a3c338c04377643d06704d5f0c0678716c470c4fa187ebd' data-name='JAVA集合基础' data-version=''>
+	<mark class='Card-badge'></mark>
 	<div class="Card-body">
 		<h3 class='Card-title'>
 			
@@ -276,10 +294,14 @@
 	</div>
 </div>
 			<ul>
-					<li><i class='fa fa-calendar'></i> 2018-04-07</li>
-					<!--注释 
+					<li>
+						<a href="/archives/">
+							<i class='fa fa-calendar'></i> 2018-04-07
+						</a>
+					</li>
 					
-					 结束-->
+					
+					
 			</ul>
 		</div>
 	</div>
@@ -309,14 +331,11 @@
 
   
 
-
-  
-
 <footer id='footer'>
     <div class='footer-copyright'>
         <div>
-            <p> 版权所有 <a href="">Mr.LiuZB </a> @ 2018 &bull; <a href="mailto:lzb@itlzb.cn">联系博主</a></p>
-            <p>设计: <i class="fas fa-paint-brush"></i> <a href="https://moober.cn">Moober</a> 和 <i class="fas fa-graduation-cap"></i> <a>Q T</a> &bull; 主题: <a href="">Cutie 2.0.7-beta-Taurus</a> &bull; 由 <a href="http://hexo.io">Hexo.</a> 强力支持 </p>
+            <p> 版权所有 <a href="">Mr.LiuZB </a> @ 2018</p>
+            <p>设计: <i class="fas fa-paint-brush"></i> <a href="https://moober.cn">Moober</a> 和 <i class="fas fa-graduation-cap"></i> <a href="https://qutang.github.io">Qu Tang</a> &bull; 主题: <a href="http://www.itlzb.cn/">Cutie 2.1.0-Taurus</a> &bull; 由 <a href="http://hexo.io">Hexo.</a> 强力驱动</p>
         </div>
     </div>
     
@@ -337,7 +356,7 @@
 
   <br>
 
-  <div id="footer-nav">
+  <div id="footer-nav" class='footer-nav'>
 		
 
 
@@ -372,7 +391,7 @@
 			</a>
 		</div>
 	</div>
-	<!-- 注释搜索图标<div class='nav-item' id='nav-item-search'>
+	<div class='nav-item' id='nav-item-search'>
 		
 		<div class='nav-icon'>
 		
@@ -380,7 +399,7 @@
 			<img src="/images/icons/colorful-outlined/search.svg" alt="">
 			</a>
 		</div>
-	</div> -->
+	</div>
 	<div class="nav-item" id='nav-item-more'>
 		<div class="nav-icon">
 				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
@@ -388,6 +407,7 @@
 				</a>
 		</div>
 		<div class="nav-more-menu">
+				<i class="far fa-times-circle" id='nav-more-menu-close' onclick='onClickNavMenuClose(event);' ontouchstart='onClickNavMenuClose(event);'></i>
 		
 			
 			
@@ -433,7 +453,8 @@
 					</a>
 				</div>
 		</div>
-		 
+		
+	</div>
 	</div>
 </nav>
 
@@ -451,11 +472,7 @@
 
 
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script src="/js/lightgallery.min.js"></script>
+    <script src="/js/lightgallery.min.js"></script>
 <script src="/js/lg-zoom.min.js"></script>
 <script type='text/javascript'>
     $(document).ready(function() {
@@ -474,42 +491,56 @@
 
 
 
+<script type='text/javascript'>
+
+  
+    loadjs(['/libs/jshashes/hashes.min.js', '/libs/js-cookie/src/js.cookie.js', '/js/post.v2.js'], 'post-version');
+    loadjs.ready('post-version', {
+      success: function(){
+        console.log('ready to run badge script')
+        
+          
+          
+          
+            var postBadge = document.querySelector('#hashit_cde8d788ede17f924a3c338c04377643d06704d5f0c0678716c470c4fa187ebd mark.Card-badge');
+            $(postBadge).fadeOut();
+            
+          
+        
+      }
+    })
+  
+</script>
 
 
-<script src="/js/post.js"></script>
+
+<!-- <script src="/js/post.js"></script> -->
+
+<script src="/js/headroom.min.js"></script>
 
 <script data-no-instant type='text/javascript'>
+
+initHeadroom();
+
 changeLayoutOnTouchScreen();
 
-
-var post = new Post('', '');
-$('.Card-archive').each(function(){
-    var post_url = $(this).attr('id');
-    var true_url = $(this).find('.Card-title a').first().attr('href');
-    var card = this;
-    if(true_url.startsWith('http')){ //external link
-        $(card).find('.Card-title a').first().click(function(e){
-            post.updatePostVersion(post_url); 
-        });
-    }
-
-    post.checkUpdate(post_url, function(post_url, hasUpdate){
-        if(hasUpdate){
-            $(card).find('mark.Card-badge').show();
-        }else{
-            $(card).find('mark.Card-badge').hide();
-        }
-    });
-    post.getCommentCount(post_url, function(count){
-        $(card).find('.card-comment-count').first().text(count);
-    });
-    post.getVisitCount(post_url, function(count){
-        $(card).find('.card-visit-count').first().text(count);
-    });
+// 
+// var post = new Post('', '');
+// $('.Card-archive').each(function(){
+//     var post_url = $(this).attr('id');
+//     var true_url = $(this).find('.Card-title a').first().attr('href');
+//     var card = this;
+//     post.getCommentCount(post_url, function(count){
+//         $(card).find('.card-comment-count').first().text(count);
+//     });
+//     post.getVisitCount(post_url, function(count){
+//         $(card).find('.card-visit-count').first().text(count);
+//     });
     
-});
-
+// });
+// 
 </script>
+
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

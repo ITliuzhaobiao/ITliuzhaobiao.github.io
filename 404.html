@@ -10,10 +10,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   
+      <title>Not Found - 耳语心声</title>
   
-  
-  
-    
+
   
   
   <meta name="description" content="个人博客">
@@ -23,9 +22,20 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Load scheme css -->
-  <link rel="stylesheet" href="/css/lightgallery.css">
+  <!-- load loadjs.js -->
+  <script src="/libs/loadjs/dist/loadjs.min.js"></script>
+
+
+<link rel="stylesheet" href="/libs/animate.css/animate.min.css">
+  <!-- load lightgallery -->
+<link rel="stylesheet" href="/css/lightgallery.css">
+<link rel="stylesheet" href="/libs/noty/lib/noty.css">
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
   
+
 
 
 
@@ -37,16 +47,20 @@
     
 
 
+ 
+
   <!-- load font awesome 5 -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
   });
   </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <!-- load mathjax -->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax//libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
+  <!-- load js-cookie -->
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="/js/social-share.min.js"></script>
     <script src="/js/theme.js"></script>
@@ -57,19 +71,18 @@
 
   <!-- include comment system code -->
   
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//cdn1.lncld.net/static/js/3.6.4/av-min.js"></script>
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="/images/favicon.png">
-
 </head>
 <body style="display: flex; flex-direction: column; min-height: 100vh;">
 
  
 
-<header id="header">
+<header id="header" class='header'>
 	<div class="header-title">
 		
 		<div class='header-logo'>
@@ -150,7 +163,7 @@
 			</a>
 		</div>
 	</div>
-	<!-- 注释搜索图标<div class='nav-item' id='nav-item-search'>
+	<div class='nav-item' id='nav-item-search'>
 		
 		<div class='nav-icon'>
 		
@@ -158,7 +171,7 @@
 			<img src="/images/icons/colorful-outlined/search.svg" alt="">
 			</a>
 		</div>
-	</div> -->
+	</div>
 	<div class="nav-item" id='nav-item-more'>
 		<div class="nav-icon">
 				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
@@ -166,6 +179,7 @@
 				</a>
 		</div>
 		<div class="nav-more-menu">
+				<i class="far fa-times-circle" id='nav-more-menu-close' onclick='onClickNavMenuClose(event);' ontouchstart='onClickNavMenuClose(event);'></i>
 		
 			
 			
@@ -211,52 +225,52 @@
 					</a>
 				</div>
 		</div>
-		 
+		
+	</div>
 	</div>
 </nav>
 
 	</div>
 </header>
 
+ 
+
+
+
+
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div style="flex: 1;">
-      <style>
+      
+
+<style>
     body {
-        background-color: white;
+      background-color: white;
     }
 </style>
-
-<section class="page">
-    <div class='page-meta'>
-        <p><small></small></p>
-    </div>
-    <!-- Title -->
-    <div class='article-header'>
-         <h1 class='article-title'>
-            <a href="/404.html">
-                
-            </a>
-        </h1>
-    </div>
-    <!-- Content -->
+<div class='article' style='margin-top: 15%'>
     <div class='article-content'>
-    <img src="/images/404.png" border="0">
-    </div>
-    
-</section>
+            <blockquote>
+                <img src="/images/404.gif" alt="">
+                <footer>
+                    <strong>Collect UI</strong>
+                    <cite><a href="https://medium.com/@CollectUI/404-page-design-inspiration-march-2017-f6d9f7efd054">404 Page Design Inspiration</a></cite>
+                </footer>
+            </blockquote>
+        </div>
+</div>
+
+
+
   </div>
-
-  
-
 
   
 
 <footer id='footer'>
     <div class='footer-copyright'>
         <div>
-            <p> 版权所有 <a href="">Mr.LiuZB </a> @ 2018 &bull; <a href="mailto:lzb@itlzb.cn">联系博主</a></p>
-            <p>设计: <i class="fas fa-paint-brush"></i> <a href="https://moober.cn">Moober</a> 和 <i class="fas fa-graduation-cap"></i> <a>Q T</a> &bull; 主题: <a href="">Cutie 2.0.7-beta-Taurus</a> &bull; 由 <a href="http://hexo.io">Hexo.</a> 强力支持 </p>
+            <p> 版权所有 <a href="">Mr.LiuZB </a> @ 2018</p>
+            <p>设计: <i class="fas fa-paint-brush"></i> <a href="https://moober.cn">Moober</a> 和 <i class="fas fa-graduation-cap"></i> <a href="https://qutang.github.io">Qu Tang</a> &bull; 主题: <a href="http://www.itlzb.cn/">Cutie 2.1.0-Taurus</a> &bull; 由 <a href="http://hexo.io">Hexo.</a> 强力驱动</p>
         </div>
     </div>
     
@@ -277,7 +291,7 @@
 
   <br>
 
-  <div id="footer-nav">
+  <div id="footer-nav" class='footer-nav'>
 		
 
 
@@ -312,7 +326,7 @@
 			</a>
 		</div>
 	</div>
-	<!-- 注释搜索图标<div class='nav-item' id='nav-item-search'>
+	<div class='nav-item' id='nav-item-search'>
 		
 		<div class='nav-icon'>
 		
@@ -320,7 +334,7 @@
 			<img src="/images/icons/colorful-outlined/search.svg" alt="">
 			</a>
 		</div>
-	</div> -->
+	</div>
 	<div class="nav-item" id='nav-item-more'>
 		<div class="nav-icon">
 				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
@@ -328,6 +342,7 @@
 				</a>
 		</div>
 		<div class="nav-more-menu">
+				<i class="far fa-times-circle" id='nav-more-menu-close' onclick='onClickNavMenuClose(event);' ontouchstart='onClickNavMenuClose(event);'></i>
 		
 			
 			
@@ -373,7 +388,8 @@
 					</a>
 				</div>
 		</div>
-		 
+		
+	</div>
 	</div>
 </nav>
 
@@ -391,11 +407,7 @@
 
 
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script src="/js/lightgallery.min.js"></script>
+    <script src="/js/lightgallery.min.js"></script>
 <script src="/js/lg-zoom.min.js"></script>
 <script type='text/javascript'>
     $(document).ready(function() {
@@ -414,15 +426,26 @@
 
 
 
+<script type='text/javascript'>
+
+  
+</script>
 
 
-<script src="/js/post.js"></script>
+
+<!-- <script src="/js/post.js"></script> -->
+
+<script src="/js/headroom.min.js"></script>
 
 <script data-no-instant type='text/javascript'>
+
+initHeadroom();
+
 changeLayoutOnTouchScreen();
 
-
+// 
 </script>
+
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
