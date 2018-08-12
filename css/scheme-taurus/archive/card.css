@@ -5,12 +5,11 @@
   min-width: 20%;
   max-width: 27%;
 for_breakpoint(mobile)
-  margin: 0.5em 1%;
+  margin: 1em 1%;
   display: flex;
   flex-wrap: wrap;
   border-radius: 10px;
   box-shadow: 0.5px 0.5px 3px -0.5px rgba(170,175,173,0.61);
-  min-height: 8em;
   position: relative;
 for_breakpoint(tablet)
 for_breakpoint(mobile)
@@ -22,6 +21,13 @@ for_breakpoint(mobile)
 }
 .Card-archive .Card-meta a:link {
   text-decoration: none;
+  color: #aaa;
+}
+.Card-archive .Card-meta a:visited {
+  color: #aaa;
+}
+.Card-archive .Card-meta a:hover {
+  color: #444;
 }
 .Card-archive .Card-meta .Card-tags {
   margin-bottom: 1em;

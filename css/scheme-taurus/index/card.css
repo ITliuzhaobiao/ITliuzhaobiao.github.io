@@ -10,7 +10,7 @@ for_breakpoint(mobile)
   border-radius: 5px;
   box-shadow: 0.5px 0.5px 3px -0.5px rgba(170,175,173,0.61);
   margin: 0.5em 0;
-  min-height: 14em;
+  min-height: 16em;
   padding: 0 2%;
   position: relative;
 }
@@ -37,11 +37,8 @@ for_breakpoint(mobile)
 }
 .Card .Card-body .Card-title h2 {
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: normal;
-}
-.Card .Card-body .Card-title label {
-  font-size: 0.8em;
 }
 .Card .Card-body .Card-excerpt {
   display: none;
@@ -55,6 +52,7 @@ for_breakpoint(mobile)
 .Card .Card-body .Card-excerpt p {
   margin: 0;
   line-height: 1.5;
+  font-size: 1.1em;
 }
 .Card .Card-body .Card-excerpt-touch {
   margin-top: 0em;
@@ -80,6 +78,12 @@ for_breakpoint(mobile)
   margin-right: 0.5em;
 for_breakpoint(mobile)
   display: block;
+}
+.Card .Card-body .Card-meta a {
+  color: #aaa;
+}
+.Card .Card-body .Card-meta a:hover {
+  color: #444;
 }
 .Card .Card-body .Card-meta ul {
   padding: 0;

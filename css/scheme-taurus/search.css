@@ -8,35 +8,17 @@ for_breakpoint(mobile)
 for_breakpoint(half-desktop)
   text-align: center;
 }
-.search-container .search-input {
+.search-container #search-form {
   border: none;
-  width: 80%;
+  width: 60%;
+  border-bottom: 2px solid #eee;
 for_breakpoint(mobile)
   padding: 0.5em;
   margin: 0.5em;
-  border-radius: 5px;
+  font-size: 1.2em;
 }
-.search-container .search-submit {
-  margin: 0.5em;
-  padding: 0.5em;
+.search-container input:focus {
   border: none;
-  background-color: #999;
-  color: #fff;
-  border-radius: 5px;
-}
-.search-container .search-submit:hover {
-  background-color: #666;
-}
-.search-container .tag-cloud {
-  margin: 0 auto;
-  margin-top: 3em;
-  width: 80%;
-}
-.search-container .tag-cloud a:link {
-  text-decoration: none;
-}
-.search-container .tag-cloud a:hover {
-  text-decoration: underline;
 }
 .search-container .cat-list {
   margin: 0 auto;
@@ -50,4 +32,25 @@ for_breakpoint(mobile)
 .search-container .cat-list li img {
   width: 3em;
   height: auto;
+}
+.tagcloud-container {
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  width: 60%;
+for_breakpoint(tablet)
+for_breakpoint(mobile)
+for_breakpoint(half-desktop)
+}
+.tagcloud-container .tag-cloud {
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  width: 80%;
+}
+.tagcloud-container .tag-cloud a:link {
+  text-decoration: none;
+}
+.tagcloud-container .tag-cloud a:hover {
+  text-decoration: underline;
 }

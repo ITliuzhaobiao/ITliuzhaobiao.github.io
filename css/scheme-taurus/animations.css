@@ -1,20 +1,15 @@
-#header {
-  animation-name: fadeInDown;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-delay: 0s;
-}
-#header .header-logo {
+.header .header-logo {
   animation-name: fadeInLeft;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 0.3s;
 }
-#header .header-logo img {
+.header .header-logo img {
   transition: all 0.2s ease-in-out;
 }
-#header .header-logo img:hover {
-  transform: scale(1.1);
+.header .header-logo img:hover {
+  transform: translateY(-4%);
+  box-shadow: 1px 2px 10px 1px #c5c5c5;
 }
 #footer {
   animation-name: fadeInUp;
@@ -22,20 +17,32 @@
   animation-fill-mode: both;
   animation-delay: 0.3s;
 }
-#footer-nav {
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-delay: 0.3s;
-}
-.Card,
 .archive-container {
   animation-name: fadeInLittleLeft;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 0.3s;
 }
-#header .header-text {
+.index-cards {
+  animation-name: fadeInLittleLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.3s;
+}
+.Card {
+  transition: all 0.3s ease-in-out;
+}
+.Card:hover {
+  transform: translateY(-3%);
+  box-shadow: 0.5px 3px 3px -0.5px rgba(170,175,173,0.61);
+}
+.Card:hover .Card-excerpt {
+  animation-name: fadeInLittleLeft;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 0;
+}
+.header .header-text {
   animation-name: fadeInDown;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -52,12 +59,6 @@
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-delay: 0.9s;
-}
-#anouncement {
-  animation-name: fadeInDown;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-delay: 1.2s;
 }
 .article-title,
 .article-logo,
@@ -87,7 +88,8 @@
   animation-delay: 1.8s;
 }
 .article-content,
-.article-comment {
+.article-comment,
+.badges {
   animation-name: fadeInLittleLeft;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -99,11 +101,12 @@
   animation-fill-mode: both;
   animation-delay: 0;
 }
-.Card-hover:hover .Card-excerpt {
-  animation-name: fadeInLittleLeft;
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
-  animation-delay: 0;
+.Card-archive {
+  transition: all 0.3s ease-in-out;
+}
+.Card-archive:hover {
+  transform: translateY(-5%);
+  box-shadow: 0.5px 3px 3px -0.5px rgba(170,175,173,0.61);
 }
 .nav-more-menu {
   animation-name: fadeInLittleDown;
@@ -153,6 +156,46 @@
     transform: translate3d(0, -50%, 0);
   }
   to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-moz-keyframes fadeOutDown {
+  to {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  from {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeOutDown {
+  to {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  from {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-o-keyframes fadeOutDown {
+  to {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  from {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeOutDown {
+  to {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  from {
     opacity: 1;
     transform: none;
   }
@@ -271,6 +314,46 @@
   to {
     opacity: 0;
     transform: translate3d(-5%, 0, 0);
+  }
+  from {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-moz-keyframes fadeOutUp {
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  from {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeOutUp {
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  from {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-o-keyframes fadeOutUp {
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  from {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeOutUp {
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
   }
   from {
     opacity: 1;
@@ -404,6 +487,7 @@
   }
   to {
     opacity: 1;
+    transform: none;
   }
 }
 @-webkit-keyframes fadeInUp {
@@ -413,6 +497,7 @@
   }
   to {
     opacity: 1;
+    transform: none;
   }
 }
 @-o-keyframes fadeInUp {
@@ -422,6 +507,7 @@
   }
   to {
     opacity: 1;
+    transform: none;
   }
 }
 @keyframes fadeInUp {
@@ -431,5 +517,90 @@
   }
   to {
     opacity: 1;
+    transform: none;
+  }
+}
+@-moz-keyframes popUp {
+  to {
+    transform: translateY(-3%);
+  }
+  from {
+    transform: none;
+  }
+}
+@-webkit-keyframes popUp {
+  to {
+    transform: translateY(-3%);
+  }
+  from {
+    transform: none;
+  }
+}
+@-o-keyframes popUp {
+  to {
+    transform: translateY(-3%);
+  }
+  from {
+    transform: none;
+  }
+}
+@keyframes popUp {
+  to {
+    transform: translateY(-3%);
+  }
+  from {
+    transform: none;
+  }
+}
+@-moz-keyframes translateDownAnouncement {
+  to {
+    opacity: 1;
+    width: 60%;
+    left: 20%;
+  }
+  from {
+    opacity: 1;
+    transform: translateY(-6.9em);
+    width: 100%;
+    left: 0;
+  }
+}
+@-webkit-keyframes translateDownAnouncement {
+  to {
+    opacity: 1;
+    width: 60%;
+    left: 20%;
+  }
+  from {
+    opacity: 1;
+    transform: translateY(-6.9em);
+    width: 100%;
+    left: 0;
+  }
+}
+@-o-keyframes translateDownAnouncement {
+  to {
+    opacity: 1;
+    width: 60%;
+    left: 20%;
+  }
+  from {
+    opacity: 1;
+    transform: translateY(-6.9em);
+    width: 100%;
+    left: 0;
+  }
+}
+@keyframes translateDownAnouncement {
+  to {
+    opacity: 1;
+    width: 60%;
+    left: 20%;
+  }
+  from {
+    opacity: 1;
+    transform: translateY(-6.9em);
+    width: 100%;
+    left: 0;
   }
 }
