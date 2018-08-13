@@ -10,13 +10,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   
-      <title>HEXO+github+git搭建博客 - 耳语心声</title>
+      <title>HEXO+github+git搭建博客及MD语法 - 耳语心声</title>
   
 
   
   
   <meta name="description" content="个人博客">
-  <meta name="author" content="Mr.LiuZB">
+  <meta name="author" content="Mr.Liu">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -116,8 +116,8 @@ crossorigin="anonymous"></script>
 				
 					<div class="nav-name">
 				
-					<a class='nav-link' href="/categories/文记/">
-						<span>文记 </span>
+					<a class='nav-link' href="/CV/CV.html">
+						<span>C V </span>
 					</a>
 				</div>
 			</div>
@@ -131,8 +131,8 @@ crossorigin="anonymous"></script>
 				
 					<div class="nav-name">
 				
-					<a class='nav-link' href="/categories/技事/">
-						<span>技事 </span>
+					<a class='nav-link' href="/categories/以梦为马/">
+						<span>以梦为马 </span>
 					</a>
 				</div>
 			</div>
@@ -146,8 +146,23 @@ crossorigin="anonymous"></script>
 				
 					<div class="nav-name">
 				
-					<a class='nav-link' href="/categories/随笔/">
-						<span>随笔 </span>
+					<a class='nav-link' href="/categories/简生活/">
+						<span>简生活 </span>
+					</a>
+				</div>
+			</div>
+		
+	
+		
+			
+		
+		
+			<div class='nav-item'>
+				
+					<div class="nav-name">
+				
+					<a class='nav-link' href="/categories/闲杂随笔/">
+						<span>闲杂随笔 </span>
 					</a>
 				</div>
 			</div>
@@ -160,7 +175,7 @@ crossorigin="anonymous"></script>
 
 <div class='toc-container'>
 <i class="far fa-times-circle" id='toc-close' onclick='closeTOC(event);' ontouchstart='closeTOC(event);'></i>
-<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo使用的基本方法"><span class="toc-number">1.</span> <span class="toc-text">HEXO使用的基本方法</span></a></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">HEXO使用的基本方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建一篇文章"><span class="toc-number">1.1.</span> <span class="toc-text">创建一篇文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本地运行服务器"><span class="toc-number">1.2.</span> <span class="toc-text">本地运行服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本地运行服务器同时为调试模式"><span class="toc-number">1.3.</span> <span class="toc-text">本地运行服务器同时为调试模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成静态文件"><span class="toc-number">1.4.</span> <span class="toc-text">生成静态文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章语法-标题-水平线-商标-引用-列表"><span class="toc-number">1.5.</span> <span class="toc-text">文章语法（标题，水平线，商标，引用，列表）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章语法-代码段-表格-链接-标记-自定列表"><span class="toc-number">1.6.</span> <span class="toc-text">文章语法（代码段，表格，链接，标记，自定列表）</span></a></li></ol></li></ol>
 </div>
 <div class="toc-button" onclick='toggleTOC(event);' ontouchstart='toggleTOC(event);'>
     <img src="/images/icons/colorful-outlined/toc.svg" alt="">
@@ -199,17 +214,21 @@ crossorigin="anonymous"></script>
 			
 				
 			
+				
+			
 		
 			<div class='nav-more-item'>
 					<div class="nav-name">
-						<a class='nav-link' href="/categories/文记/">
-							<span>文记</span>
+						<a class='nav-link' href="/CV/CV.html">
+							<span>C v</span>
 						</a>
 					</div>
 			</div>
 		
 		
 			
+			
+				
 			
 				
 					
@@ -221,21 +240,41 @@ crossorigin="anonymous"></script>
 			
 				
 			
+				
+			
 		
 			<div class='nav-more-item'>
 					<div class="nav-name">
-						<a class='nav-link' href="/categories/随笔/">
-							<span>随笔</span>
+						<a class='nav-link' href="/categories/简生活/">
+							<span>简生活</span>
 						</a>
 					</div>
 			</div>
 		
 		
+			
+			
+				
+					
+				
+			
+				
+			
+		
+		
 		
 		<div class='nav-more-item'>
 				<div class="nav-name">
-					<a class='nav-link' href="/categories/技事/">
-						<span>技事</span>
+					<a class='nav-link' href="/categories/闲杂随笔/">
+						<span>闲杂随笔</span>
+					</a>
+				</div>
+		</div>
+		
+		<div class='nav-more-item'>
+				<div class="nav-name">
+					<a class='nav-link' href="/categories/以梦为马/">
+						<span>以梦为马</span>
 					</a>
 				</div>
 		</div>
@@ -299,14 +338,14 @@ crossorigin="anonymous"></script>
 
 
 
-<article class="article" id="/2018/03/28/github_HEXO/" data-name='HEXO+github+git搭建博客' data-version="">
+<article class="article" id="/2018/03/28/github_HEXO/" data-name='HEXO+github+git搭建博客及MD语法' data-version="">
 
     <!-- Title -->
     <div class='article-header'>
          
          <h1 class='article-title'>
             <a href="/2018/03/28/github_HEXO/">
-                HEXO+github+git搭建博客
+                HEXO+github+git搭建博客及MD语法
             </a>
         </h1>
         <!-- TODO: support nested categories,display them nicely -->
@@ -314,8 +353,8 @@ crossorigin="anonymous"></script>
         <ul class='article-categories'>
             
             
-                <li><a href="/categories/技事/" data-no-instant>
-                    <img src="/images/技事.svg" alt="技事" onerror='if(this.src != "/images/uncategorized.svg") this.src="/images/uncategorized.svg"' title='技事'/>
+                <li><a href="/categories/闲杂随笔/" data-no-instant>
+                    <img src="/images/闲杂随笔.svg" alt="闲杂随笔" onerror='if(this.src != "/images/uncategorized.svg") this.src="/images/uncategorized.svg"' title='闲杂随笔'/>
                 </a></li>
             
         </ul>
@@ -327,7 +366,7 @@ crossorigin="anonymous"></script>
     <ul>
             <li><i class='fa fa-calendar'></i> 2018-03-28</li>
             
-            <li><i class="fa fa-user"></i> Mr.LiuZB</li>
+            <li><i class="fa fa-user"></i> Mr.Liu</li>
             <li><i class="fas fa-copyright"></i>
             
                 
@@ -373,7 +412,7 @@ crossorigin="anonymous"></script>
                                 <img src="" alt="">
                             </div>
                             <div class='author-name'>
-                                Mr.LiuZB
+                                Mr.Liu
                             </div>
                         </div>
                         <div class="author-ai">
@@ -413,10 +452,10 @@ crossorigin="anonymous"></script>
   <h3>Quick Read</h3>
 </div>
 <div class="card-text">
-  <p id='text-post-summary'>欢迎使用 Hexo ！这里有更多的 文档 信息。在使用Hexo时遇到任何问题， 寻找问题答案可以到 这里 或者向他咨询 GitHub。
+  <p id='text-post-summary'>欢迎使用 Hexo ，这里有更多的 文档 信息。在使用Hexo时遇到任何问题， 寻找问题答案可以到 这里 或者向他咨询 GitHub。
 HEXO使用的基本方法
 创建一篇文章
-1$ hexo new "My New Post"
+1$ hexo new "My New Post Name"
 更多信息: Writing
 本地运行服务器
 1$ hexo server
@@ -428,7 +467,7 @@ HEXO使用的基本方法
 更多信息: Generating
 部署到远程站点
 1$ hexo deploy
-更多信息: Deployment</p>
+更多信息:...</p>
 </div>
         </div> -->
     </div>
@@ -446,7 +485,7 @@ HEXO使用的基本方法
 
 <div class='toc-container'>
 <i class="far fa-times-circle" id='toc-close' onclick='closeTOC(event);' ontouchstart='closeTOC(event);'></i>
-<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo使用的基本方法"><span class="toc-number">1.</span> <span class="toc-text">HEXO使用的基本方法</span></a></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">HEXO使用的基本方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建一篇文章"><span class="toc-number">1.1.</span> <span class="toc-text">创建一篇文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本地运行服务器"><span class="toc-number">1.2.</span> <span class="toc-text">本地运行服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本地运行服务器同时为调试模式"><span class="toc-number">1.3.</span> <span class="toc-text">本地运行服务器同时为调试模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成静态文件"><span class="toc-number">1.4.</span> <span class="toc-text">生成静态文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章语法-标题-水平线-商标-引用-列表"><span class="toc-number">1.5.</span> <span class="toc-text">文章语法（标题，水平线，商标，引用，列表）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章语法-代码段-表格-链接-标记-自定列表"><span class="toc-number">1.6.</span> <span class="toc-text">文章语法（代码段，表格，链接，标记，自定列表）</span></a></li></ol></li></ol>
 </div>
 <div class="toc-button" onclick='toggleTOC(event);' ontouchstart='toggleTOC(event);'>
     <img src="/images/icons/colorful-outlined/toc.svg" alt="">
@@ -454,41 +493,182 @@ HEXO使用的基本方法
 
     </div>
     <div class='article-content'>
-    <p>欢迎使用 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> ！这里有更多的 <a href="https://hexo.io/docs/" target="_blank" rel="noopener">文档</a> 信息。在使用Hexo时遇到任何问题， 寻找问题答案可以到 <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">这里</a> 或者向他咨询 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>。</p>
-<h2 id="hexo使用的基本方法">HEXO使用的基本方法</h2>
-<h3 id="创建一篇文章">创建一篇文章</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+    <p>欢迎使用 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> ，这里有更多的 <a href="https://hexo.io/docs/" target="_blank" rel="noopener">文档</a> 信息。在使用Hexo时遇到任何问题， 寻找问题答案可以到 <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">这里</a> 或者向他咨询 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>。</p>
+<h1>HEXO使用的基本方法</h1>
+<h2 id="创建一篇文章">创建一篇文章</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post Name"</span></span><br></pre></td></tr></table></figure>
 <p>更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="本地运行服务器">本地运行服务器</h3>
+<h2 id="本地运行服务器">本地运行服务器</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="本地运行服务器同时为调试模式">本地运行服务器同时为调试模式</h3>
+<h2 id="本地运行服务器同时为调试模式">本地运行服务器同时为调试模式</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server --debug</span><br></pre></td></tr></table></figure>
-<h3 id="生成静态文件">生成静态文件</h3>
+<h2 id="生成静态文件">生成静态文件</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
 <h3 id="部署到远程站点">部署到远程站点</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>更多信息: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h2 id="文章语法-标题-水平线-商标-引用-列表">文章语法（标题，水平线，商标，引用，列表）</h2>
+<dl>
+<dt>标题的使用</dt>
+<dd>
+<p>代码及效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># h1 Heading</span><br><span class="line">## h2 Heading</span><br><span class="line">### h3 Heading</span><br><span class="line">#### h4 Heading</span><br><span class="line">##### h5 Heading</span><br><span class="line">###### h6 Heading</span><br></pre></td></tr></table></figure>
+<p>由于标题一和标题二会产生目录，故不演示效果。</p>
+<h3 id="h3-heading">h3 Heading</h3>
+<h4 id="h4-heading">h4 Heading</h4>
+<h5 id="h5-heading">h5 Heading</h5>
+<h6 id="h6-heading">h6 Heading</h6>
+</dd>
+<dt>水平线的使用</dt>
+<dd>
+<p>代码及效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">***  水平线</span><br><span class="line">---  水平线</span><br><span class="line">___  水平线</span><br></pre></td></tr></table></figure>
+<hr>
+<hr>
+<hr>
+</dd>
+<dt>商标符号的使用</dt>
+<dd>
+<p>代码及效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(c) (C) (r) (R) (tm) (TM) (p) (P) +-</span><br><span class="line">?????? !!!! -- --- ,,</span><br></pre></td></tr></table></figure>
+<p>© © ® ® ™ ™ § § ±<br>
+??? !!! – — ,</p>
+</dd>
+<dt>引用文字的使用</dt>
+<dd>
+<p>代码及效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 引用一</span><br><span class="line">&gt;&gt; 引用二</span><br><span class="line">&gt;&gt;&gt; 引用三</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>引用一</p>
+<blockquote>
+<p>引用二</p>
+<blockquote>
+<p>引用三</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</dd>
+<dt>列表的使用</dt>
+<dd>
+<p>代码及效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1. 列表1</span><br><span class="line">2. 列表2</span><br><span class="line">	1. 子列表1</span><br><span class="line">	2. 子列表2</span><br><span class="line">		1. 孙列表1</span><br><span class="line">3. 列表3</span><br><span class="line"></span><br><span class="line">+ 无序列表</span><br><span class="line">	+ 子无序列表</span><br><span class="line">		+ 孙无序列表</span><br><span class="line">+ 无序列表</span><br></pre></td></tr></table></figure>
+<ol>
+<li>列表1</li>
+<li>列表2
+<ol>
+<li>子列表1</li>
+<li>子列表2
+<ol>
+<li>孙列表1</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>列表3</li>
+</ol>
+<ul>
+<li>无序列表
+<ul>
+<li>子无序列表
+<ul>
+<li>孙无序列表</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>无序列表</li>
+</ul>
+</dd>
+</dl>
+<h2 id="文章语法-代码段-表格-链接-标记-自定列表">文章语法（代码段，表格，链接，标记，自定列表）</h2>
+<dl>
+<dt>代码段的使用</dt>
+<dd>
+<p>代码及效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">文字段中的代码：`System.out.println(&quot;Hello World&quot;);`     </span><br><span class="line">代码段使用</span><br><span class="line">``` </span><br><span class="line">public void main(String[] arge)&#123;</span><br><span class="line">	System.out.println(&quot;Hello World&quot;);</span><br><span class="line">&#125;</span><br><span class="line">```  </span><br><span class="line">每行的空格数为4个以后：后面的文字自动转化为代码形式</span><br></pre></td></tr></table></figure>
+<p>文字段中的代码：<code>System.out.println(&quot;Hello World&quot;);</code><br>
+代码段使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public void main(String[] arge)&#123;	</span><br><span class="line">	System.out.println(&quot;Hello World&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>每行的空格数为4个以后：后面的文字自动转化为代码形式</p>
+</dd>
+<dt>表格的使用</dt>
+<dd>
+<p>代码及效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 表 —— 头 —— 1 | 表 —— 头 —— 2 | 表 —— 头 —— 3 |</span><br><span class="line">| :---- | :----: | ----: |</span><br><span class="line">| 居左 | 居中 | 居右 |</span><br><span class="line">| 内容 | 内容 | 内容 |</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">表 —— 头 —— 1</th>
+<th style="text-align:center">表 —— 头 —— 2</th>
+<th style="text-align:right">表 —— 头 —— 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">居左</td>
+<td style="text-align:center">居中</td>
+<td style="text-align:right">居右</td>
+</tr>
+<tr>
+<td style="text-align:left">内容</td>
+<td style="text-align:center">内容</td>
+<td style="text-align:right">内容</td>
+</tr>
+</tbody>
+</table>
+</dd>
+<dt>链接的使用</dt>
+<dd>
+<p>代码及效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[文字链接](http://blog.itlzb.cn &quot;耳语心声&quot;)</span><br><span class="line">![图标，图片链接](http://blog.itlzb.cn/images/icon.jpg)</span><br><span class="line">Autoconverted link https://github.com/nodeca/pica (enabled linkify)</span><br></pre></td></tr></table></figure>
+<p><a href="http://blog.itlzb.cn" title="耳语心声" target="_blank" rel="noopener">文字链接</a></p>
+<p><img src="https://octodex.github.com/images/dojocat.jpg" alt="图标，图片链接"></p>
+<p>Autoconverted link <a href="https://github.com/nodeca/pica" target="_blank" rel="noopener">https://github.com/nodeca/pica</a> (enabled linkify)</p>
+</dd>
+<dt>标记文字的使用</dt>
+<dd>
+<p>代码及效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Footnote 1 link[^first].</span><br><span class="line">Footnote 2 link[^second].</span><br><span class="line">Inline footnote^[Text of inline footnote] definition.</span><br><span class="line">Duplicated footnote reference[^second].</span><br><span class="line">[^first]: Footnote **can have markup**</span><br><span class="line">    and multiple paragraphs.</span><br><span class="line">[^second]: Footnote text.</span><br></pre></td></tr></table></figure>
+<p>Footnote 1 link<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>.</p>
+<p>Footnote 2 link<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>.</p>
+<p>Inline footnote<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup> definition.</p>
+<p>Duplicated footnote reference<sup class="footnote-ref"><a href="#fn2" id="fnref2:1">[2]</a></sup>.</p>
+</dd>
+<dt>定义列表的使用</dt>
+<dd>
+<p>代码及效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">定义列表类型一的使用</span><br><span class="line">:   代码及效果</span><br><span class="line"></span><br><span class="line">文字内容</span><br><span class="line"></span><br><span class="line">定义列表类型二的使用</span><br><span class="line">  ~ 代码及效果</span><br><span class="line"></span><br><span class="line">文字内容</span><br></pre></td></tr></table></figure>
+<dl>
+<dt>定义列表类型一的使用</dt>
+<dd>代码及效果</dd>
+</dl>
+<p>文字内容</p>
+<dl>
+<dt>定义列表类型二的使用</dt>
+<dd>代码及效果</dd>
+</dl>
+<p>文字内容</p>
+<p>这是定义的标记文字的链接位置</p>
+</dd>
+</dl>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Footnote <strong>can have markup</strong>
+and multiple paragraphs. <a href="#fnref1" class="footnote-backref">↩</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>Footnote text. <a href="#fnref2" class="footnote-backref">↩</a> <a href="#fnref2:1" class="footnote-backref">↩</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>Text of inline footnote <a href="#fnref3" class="footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>
 
     
     </div>
     
-    
-        <div class="article-comment" id='article-comment'>
-            
-
-<h1>评论</h1>
-
-  
-    <div id="comment-not-available">
-      Not available
-      <p><strong>For site maintainer: Please provide <code>appId</code> and <code>appKey</code> in your <code>_data/cutie.yml</code> file for <code>valine</code> comment system.</strong></p>
-    </div>
-  
-
-
-        </div>
         
 </article>
   </div>
@@ -498,7 +678,7 @@ HEXO使用的基本方法
 <footer id='footer'>
     <div class='footer-copyright'>
         <div>
-            <p> 版权所有 <a href="">Mr.LiuZB </a> @ 2018</p>
+            <p> 版权所有 <a href="">Mr.Liu </a> @ 2018</p>
             <p>设计: <i class="fas fa-paint-brush"></i> <a href="https://moober.cn">Moober</a> 和 <i class="fas fa-graduation-cap"></i> <a href="https://qutang.github.io">Qu Tang</a> &bull; 主题: <a href="http://www.itlzb.cn/">Cutie 2.1.0-Taurus</a> &bull; 由 <a href="http://hexo.io">Hexo.</a> 强力驱动</p>
         </div>
     </div>
@@ -545,6 +725,11 @@ HEXO使用的基本方法
 		
 		
 	
+		
+			
+		
+		
+	
 	
 	<div class='nav-item' id='nav-item-toc'>
 		
@@ -552,7 +737,7 @@ HEXO使用的基本方法
 
 <div class='toc-container'>
 <i class="far fa-times-circle" id='toc-close' onclick='closeTOC(event);' ontouchstart='closeTOC(event);'></i>
-<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo使用的基本方法"><span class="toc-number">1.</span> <span class="toc-text">HEXO使用的基本方法</span></a></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">HEXO使用的基本方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建一篇文章"><span class="toc-number">1.1.</span> <span class="toc-text">创建一篇文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本地运行服务器"><span class="toc-number">1.2.</span> <span class="toc-text">本地运行服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本地运行服务器同时为调试模式"><span class="toc-number">1.3.</span> <span class="toc-text">本地运行服务器同时为调试模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成静态文件"><span class="toc-number">1.4.</span> <span class="toc-text">生成静态文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章语法-标题-水平线-商标-引用-列表"><span class="toc-number">1.5.</span> <span class="toc-text">文章语法（标题，水平线，商标，引用，列表）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章语法-代码段-表格-链接-标记-自定列表"><span class="toc-number">1.6.</span> <span class="toc-text">文章语法（代码段，表格，链接，标记，自定列表）</span></a></li></ol></li></ol>
 </div>
 <div class="toc-button" onclick='toggleTOC(event);' ontouchstart='toggleTOC(event);'>
     <img src="/images/icons/colorful-outlined/toc.svg" alt="">
@@ -591,17 +776,21 @@ HEXO使用的基本方法
 			
 				
 			
+				
+			
 		
 			<div class='nav-more-item'>
 					<div class="nav-name">
-						<a class='nav-link' href="/categories/文记/">
-							<span>文记</span>
+						<a class='nav-link' href="/CV/CV.html">
+							<span>C v</span>
 						</a>
 					</div>
 			</div>
 		
 		
 			
+			
+				
 			
 				
 					
@@ -613,21 +802,41 @@ HEXO使用的基本方法
 			
 				
 			
+				
+			
 		
 			<div class='nav-more-item'>
 					<div class="nav-name">
-						<a class='nav-link' href="/categories/随笔/">
-							<span>随笔</span>
+						<a class='nav-link' href="/categories/简生活/">
+							<span>简生活</span>
 						</a>
 					</div>
 			</div>
 		
 		
+			
+			
+				
+					
+				
+			
+				
+			
+		
+		
 		
 		<div class='nav-more-item'>
 				<div class="nav-name">
-					<a class='nav-link' href="/categories/技事/">
-						<span>技事</span>
+					<a class='nav-link' href="/categories/闲杂随笔/">
+						<span>闲杂随笔</span>
+					</a>
+				</div>
+		</div>
+		
+		<div class='nav-more-item'>
+				<div class="nav-name">
+					<a class='nav-link' href="/categories/以梦为马/">
+						<span>以梦为马</span>
 					</a>
 				</div>
 		</div>
@@ -676,7 +885,7 @@ HEXO使用的基本方法
   loadjs(['/libs/jshashes/hashes.min.js', '/libs/js-cookie/src/js.cookie.js', '/js/post.v2.js'], 'post-version');
   loadjs.ready('post-version', function(){
     
-    new Postv2('hashit_98f62ea09e3bb39510eec8c6fd442ba2e26462919c933a9b65c5ab94dd68a230').update('hashit_e97c5909e94fc98ad475132cb96f3b4e93ca78175983238e35724730d946a179', function(){});
+    new Postv2('hashit_98f62ea09e3bb39510eec8c6fd442ba2e26462919c933a9b65c5ab94dd68a230').update('hashit_98524fb6254ba1c6c8f7f6963a573df53bd941fe7e73e322989ca2a6ad59ce68', function(){});
   });
   
 </script>
