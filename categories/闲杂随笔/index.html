@@ -344,6 +344,15 @@ crossorigin="anonymous"></script>
 					</li>
 					
 					
+					<li>
+						<a href="/2018/03/28/github_HEXO/#article-comment">
+							<i class='fa fa-comments'></i> <span class='card-comment-count'>0</span>
+						</a>
+					</li>
+					<li>
+						<i class="fa fa-eye"></i> <span class='card-visit-count'>0</span>
+					</li>
+					
 					
 			</ul>
 		</div>
@@ -537,6 +546,23 @@ crossorigin="anonymous"></script>
 
 
     
+    
+    
+    
+<script>
+    new Valine({
+        el: '#valine',
+        notify:false, 
+        verify:false,
+        appId: 'Tdt0ap60YczPm0WyeNczaF0z-gzGzoHsz',
+        appKey: 'tj0fnz56gmFIhXLVOfvTvSrX',
+        placeholder: 'Ask me a question...',
+        path:window.location.pathname, 
+        avatar:'retro',
+        lang: 'z'
+    });
+</script>
+
 
 
 
@@ -585,6 +611,50 @@ crossorigin="anonymous"></script>
 </script>
 
 
+    <script type="text/javascript" src="https://l2.io/ip.js?var=user_ip"></script>
+<script type='text/javascript'>
+  
+    loadjs(['/libs/jshashes/hashes.min.js', '/libs/js-cookie/src/js.cookie.js', '/js/leancloud.js'], 'post-visit-comment-count');
+    loadjs.ready('post-visit-comment-count', {
+      success: function(){
+          LeanCloud.init('Tdt0ap60YczPm0WyeNczaF0z-gzGzoHsz', 'tj0fnz56gmFIhXLVOfvTvSrX');
+          var leanCloud = LeanCloud.getInstance();
+        
+          
+          
+          // start caching post visit and comment counts
+          leanCloud.fetchIsThumbUp('/2018/03/28/github_HEXO/', user_ip);
+          leanCloud.fetchCommentCount('/2018/03/28/github_HEXO/');
+          leanCloud.fetchVisitCount('/2018/03/28/github_HEXO/');
+          leanCloud.fetchThumbUpCount('/2018/03/28/github_HEXO/');
+          leanCloud.getCommentCount('/2018/03/28/github_HEXO/', function(count){
+              var el = document.querySelector('#hashit_98f62ea09e3bb39510eec8c6fd442ba2e26462919c933a9b65c5ab94dd68a230 .card-comment-count');
+              if(el) el.innerHTML = count;
+          });
+          leanCloud.getVisitCount('/2018/03/28/github_HEXO/', function(count){
+              var el = document.querySelector('#hashit_98f62ea09e3bb39510eec8c6fd442ba2e26462919c933a9b65c5ab94dd68a230 .card-visit-count');
+              if(el) el.innerHTML = count;
+          });
+          leanCloud.getThumbUpCount('/2018/03/28/github_HEXO/', function(count){
+              var el = document.querySelector('#hashit_98f62ea09e3bb39510eec8c6fd442ba2e26462919c933a9b65c5ab94dd68a230 .card-thumbup-count');
+              if(el) el.innerHTML = count;
+          });
+          leanCloud.isThumbUp('/2018/03/28/github_HEXO/', function(isThumbUp){
+              var el = document.querySelector('#hashit_98f62ea09e3bb39510eec8c6fd442ba2e26462919c933a9b65c5ab94dd68a230 .card-thumbup-container i');
+              if(el){
+                if(isThumbUp){
+                  el.className = 'fas fa-thumbs-up';
+                }else{
+                  el.className = 'far fa-thumbs-up';
+                }
+              }
+          });
+        
+      }
+    })
+  
+</script>
+
 
 <!-- <script src="/js/post.js"></script> -->
 
@@ -597,7 +667,7 @@ initHeadroom();
 changeLayoutOnTouchScreen();
 
 // 
-// var post = new Post('', '');
+// var post = new Post('Tdt0ap60YczPm0WyeNczaF0z-gzGzoHsz', 'tj0fnz56gmFIhXLVOfvTvSrX');
 // $('.Card-archive').each(function(){
 //     var post_url = $(this).attr('id');
 //     var true_url = $(this).find('.Card-title a').first().attr('href');

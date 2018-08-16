@@ -366,6 +366,10 @@ crossorigin="anonymous"></script>
     <ul>
             <li><i class='fa fa-calendar'></i> 2018-06-16</li>
             
+            <li class='comment-button'><a href='#article-comment'><i class='fa fa-comments'></i> <span id='article-comment-count'>0</span></a></li>
+            <li><i class="fa fa-eye"></i> <span id='article-visit-count'>0</span></li>
+            <li class='thumb-up-button' id='thumb-up-button'><i class="far fa-thumbs-up fa-lg" id='thumb-up-icon'></i> <span id='article-thumbup-count'>0</span></li>
+            
             <li><i class="fa fa-user"></i> Mr.Liu</li>
             <li><i class="fas fa-copyright"></i>
             
@@ -927,6 +931,18 @@ B: 使用集合遍历元素，利用集合提供的方法修改元素（普通fo
     
     </div>
     
+    
+        <div class="article-comment" id='article-comment'>
+            
+
+<h1>评论</h1>
+
+  
+    <div id='valine'></div>
+  
+
+
+        </div>
         
 </article>
   </div>
@@ -1110,6 +1126,23 @@ B: 使用集合遍历元素，利用集合提供的方法修改元素（普通fo
 
 
     
+    
+    
+    
+<script>
+    new Valine({
+        el: '#valine',
+        notify:false, 
+        verify:false,
+        appId: 'Tdt0ap60YczPm0WyeNczaF0z-gzGzoHsz',
+        appKey: 'tj0fnz56gmFIhXLVOfvTvSrX',
+        placeholder: 'Ask me a question...',
+        path:window.location.pathname, 
+        avatar:'retro',
+        lang: 'z'
+    });
+</script>
+
 
 
 
@@ -1149,6 +1182,63 @@ B: 使用集合遍历元素，利用集合提供的方法修改元素（普通fo
 </script>
 
 
+    <script type="text/javascript" src="https://l2.io/ip.js?var=user_ip"></script>
+<script type='text/javascript'>
+  
+  // update cookie if this page is opened (directly)
+  loadjs(['/libs/jshashes/hashes.min.js', '/libs/js-cookie/src/js.cookie.js', '/js/leancloud.js'], 'post-visit-comment-count');
+  loadjs.ready('post-visit-comment-count', function(){
+    
+    
+    LeanCloud.init('Tdt0ap60YczPm0WyeNczaF0z-gzGzoHsz', 'tj0fnz56gmFIhXLVOfvTvSrX');
+    var leanCloud = LeanCloud.getInstance();
+    leanCloud.fetchIsThumbUp('/2018/06/16/JAVA+集合/', user_ip);
+    document.getElementById('thumb-up-button').addEventListener('click', function(e){
+      leanCloud.isThumbUp('/2018/06/16/JAVA+集合/', function(isThumbUp){
+        console.log('is thumb up:' + isThumbUp);
+        if(isThumbUp){
+          leanCloud.removeThumbUpRecord('/2018/06/16/JAVA+集合/', user_ip);
+          document.getElementById('thumb-up-icon').className = "far fa-thumbs-up fa-lg";
+          
+        }else{
+          leanCloud.addThumbUpRecord('/2018/06/16/JAVA+集合/', user_ip);
+          document.getElementById('thumb-up-icon').className = "fas fa-thumbs-up fa-lg";
+        }
+        leanCloud.getThumbUpCount('/2018/06/16/JAVA+集合/', function(count){
+            console.log('thumb up count: ' + count)
+            var el = document.getElementById('article-thumbup-count');
+            if(el) el.innerHTML = count;
+        });
+      });
+    });
+    leanCloud.addVisitRecord('/2018/06/16/JAVA+集合/', user_ip);
+    leanCloud.fetchCommentCount('/2018/06/16/JAVA+集合/');
+    leanCloud.fetchVisitCount('/2018/06/16/JAVA+集合/');
+    leanCloud.fetchThumbUpCount('/2018/06/16/JAVA+集合/');
+    leanCloud.getCommentCount('/2018/06/16/JAVA+集合/', function(count){
+        var el = document.querySelector('#article-comment-count');
+        if(el) el.innerHTML = count;
+    });
+    leanCloud.getVisitCount('/2018/06/16/JAVA+集合/', function(count){
+        var el = document.querySelector('#article-visit-count');
+        if(el) el.innerHTML = count;
+    });
+    leanCloud.getThumbUpCount('/2018/06/16/JAVA+集合/', function(count){
+        var el = document.getElementById('article-thumbup-count');
+        if(el) el.innerHTML = count;
+    });
+    leanCloud.isThumbUp('/2018/06/16/JAVA+集合/', function(isThumbUp){
+        console.log('init thumb up:' + isThumbUp);
+        if(isThumbUp){
+          document.getElementById('thumb-up-icon').className = "fas fa-thumbs-up fa-lg";
+        }else{
+          document.getElementById('thumb-up-icon').className = "far fa-thumbs-up fa-lg";
+        }
+    });
+  });
+  
+</script>
+
 
 <!-- <script src="/js/post.js"></script> -->
 
@@ -1161,7 +1251,7 @@ initHeadroom();
 changeLayoutOnTouchScreen();
 
 // 
-// var post = new Post('', '');
+// var post = new Post('Tdt0ap60YczPm0WyeNczaF0z-gzGzoHsz', 'tj0fnz56gmFIhXLVOfvTvSrX');
 // post.getCommentCount(window.location.pathname, function(count){
 //     $('#article-comment-count').text(count);
 // });
